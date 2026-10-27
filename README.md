@@ -1,4 +1,4 @@
-# Prediksi Arah Pergerakan Harga Emas Menggunakan Machine Learning
+# Prediksi Arah Pergerakan Harga Emas Menggunakan Supervised Learning dengan Algoritma Random Fores
 
 ## Anggota Kelompok
 - Dhananjaya (2501010023)
