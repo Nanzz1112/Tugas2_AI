@@ -172,6 +172,3 @@ Periksa hasil yang ditampilkan, termasuk:
 
 Prediksi arah harga emas dapat dirumuskan sebagai masalah klasifikasi dua kelas. Random Forest diusulkan sebagai model utama karena tangguh terhadap noise, tidak banyak membutuhkan penyesuaian, dan dapat menunjukkan fitur yang paling berpengaruh. Logistic Regression dipakai sebagai pembanding sederhana. Kesimpulan akhir bergantung pada hasil percobaan pada data uji.
 
----
-
-**Catatan:** Proyek ini bertujuan untuk pembelajaran machine learning dan bukan merupakan saran investasi. Hasil prediksi tidak menjamin pergerakan harga emas yang sebenarnya.
