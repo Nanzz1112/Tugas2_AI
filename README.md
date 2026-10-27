@@ -96,63 +96,20 @@ Fitur digunakan sebagai input untuk mempelajari pola historis, sedangkan target 
 
 Karena fitur hanya berasal dari harga itu sendiri dan arah harga sulit ditebak, akurasi yang sedikit di atas 50% adalah hasil yang mungkin terjadi. Hal ini bisa dibahas sebagai keterbatasan penelitian.
 
-## 7. Cara Membuka dan Menjalankan Program di Google Colab
 
-Program dapat dijalankan menggunakan Google Colab tanpa perlu menginstal Python di komputer.
+## 7. Cara Membuka dan Menjalankan Program
 
-### Langkah 1: Buka Google Colab
+Program prediksi harga emas dijalankan menggunakan Google Colab dengan langkah-langkah berikut:
 
-Buka https://colab.research.google.com/, kemudian pilih **New Notebook** untuk membuat notebook baru.
+1. Buka situs [Google Colab](https://colab.research.google.com/) melalui browser.
+2. Buka notebook yang sudah berisi kode program prediksi harga emas.
+3. Pastikan file dataset `xauusd_gold_dataset.csv.csv` sudah diunggah ke Google Colab.
+4. Pastikan nama file dataset pada kode sudah sesuai dengan nama file yang diunggah.
+5. Jalankan kode dengan menekan tombol **Run** (ikon segitiga). Jika seluruh kode sudah digabung menjadi satu sel, cukup jalankan sel tersebut.
+6. Tunggu sampai seluruh proses selesai, mulai dari membaca dataset, melatih model Random Forest dan Logistic Regression, hingga menampilkan hasil evaluasi dan grafik.
+7. Perhatikan hasil keluaran program yang menampilkan perbandingan performa model, confusion matrix, feature importance, serta contoh hasil prediksi arah harga emas.
 
-### Langkah 2: Upload File Program dan Dataset
-
-Siapkan dua file berikut:
-
-- `prediksi_harga_emas.py` — file program Python.
-- `gold.csv` — dataset harga emas yang diunduh dari Kaggle.
-
-Buat cell baru dan jalankan kode berikut:
-
-```python
-from google.colab import files
-
-data_upload = files.upload()
-```
-
-Pilih file `prediksi_harga_emas.py` dan `gold.csv` dari komputer. Pastikan kedua file berhasil diunggah.
-
-### Langkah 3: Instal Library
-
-Jalankan kode berikut pada cell baru:
-
-```python
-!pip install pandas matplotlib scikit-learn
-```
-
-Tunggu sampai proses instalasi selesai.
-
-### Langkah 4: Jalankan Program
-
-Setelah kedua file berhasil diunggah, jalankan kode berikut:
-
-```python
-%run prediksi_harga_emas.py
-```
-
-Program akan membaca dataset `gold.csv`, melatih Random Forest dan Logistic Regression, menampilkan hasil evaluasi model, serta menampilkan grafik yang dibuat oleh program.
-
-### Langkah 5: Periksa Hasil
-
-Periksa hasil yang ditampilkan, termasuk:
-
-- Jumlah data yang digunakan.
-- Fitur yang berhasil dibaca.
-- Hasil evaluasi Random Forest.
-- Hasil evaluasi Logistic Regression.
-- Perbandingan accuracy kedua model.
-- Confusion matrix dan feature importance jika ditampilkan oleh program.
-
-**Catatan:** Jika muncul pesan `FileNotFoundError`, pastikan file `gold.csv` sudah diunggah dan namanya sesuai. Jika sesi Google Colab terputus atau diatur ulang, file mungkin perlu diunggah kembali.
+Program berhasil dijalankan apabila seluruh proses selesai tanpa error dan hasil evaluasi serta grafik dapat ditampilkan di Google Colab.
 
 ## 8. Jurnal Terkait
 
